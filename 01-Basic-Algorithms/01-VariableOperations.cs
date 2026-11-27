@@ -1,35 +1,33 @@
 using System;
 
-class VariableOperations
+public class VariableOperations
 {
-    static void Main()
+    public static void Run()
     {
-        // Kullanıcıdan iki sayı alıyorum.
-        Console.Write("Birinci sayıyı giriniz: ");
+        Console.WriteLine("=== MATEMATIKSEL ISLEMLER ===");
+
+        Console.Write("Birinci sayiyi giriniz: ");
         int sayi1 = Convert.ToInt32(Console.ReadLine());
 
-        Console.Write("İkinci sayıyı giriniz: ");
+        Console.Write("Ikinci sayiyi giriniz: ");
         int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-        // Matematiksel işlemler
         int toplam = sayi1 + sayi2;
         int fark = sayi1 - sayi2;
         int carpim = sayi1 * sayi2;
 
-        // Sonuçları ekrana yazdırıyorum.
-        Console.WriteLine($"Toplam: {toplam}");
-        Console.WriteLine($"Fark: {fark}");
-        Console.WriteLine($"Çarpım: {carpim}");
+        Console.WriteLine("Toplam: " + toplam);
+        Console.WriteLine("Fark: " + fark);
+        Console.WriteLine("Carpim: " + carpim);
 
-        // Sıfıra bölme kontrolü
         if (sayi2 != 0)
         {
             double bolum = (double)sayi1 / sayi2;
-            Console.WriteLine($"Bölüm: {bolum}");
+            Console.WriteLine("Bolum: " + bolum);
         }
         else
         {
-            Console.WriteLine("Bir sayı sıfıra bölünemez!");
+            Console.WriteLine("Sifira bolme yapilamaz!");
         }
     }
 }

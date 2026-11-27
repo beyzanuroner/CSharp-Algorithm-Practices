@@ -1,1 +1,1 @@
-﻿Console.WriteLine("Hello, World!");
+﻿WhileDigitCount.Run();
