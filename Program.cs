@@ -1,1 +1,1 @@
-﻿WhileDigitCount.Run();
+﻿ArrayFrequency.Run();
